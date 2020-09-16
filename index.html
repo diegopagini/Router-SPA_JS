@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cliente de nuestro SPA Router</title>
-</head>
+    <meta charset="UTF-8">
+    <title>Manejo de Routers</title>
+ </head>
 <body>
-  <header>
-    <ul>
-      <li><button>home</button></li>
-      <li><button>contact</button></li>
-      <li><button>about me</button></li>
-    </ul>
-  </header>
-
-  <div>
-    <h1> Hola Estudiante! Estas en el home</h1>
-  </div>
-  
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <button id="Home" onclick="ROUTER.load('home')">Home</button>
+                </li>
+                <li>
+                    <button id="About" onclick="ROUTER.load('about')">About</button>
+                </li>
+                <li>
+                    <button id="Contact" onclick="ROUTER.load('contact')">Contact</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="content">
+        </div>
+    </section>
+    <footer></footer>
+    <script src="./js/Paths.js"></script>
+    <script src="./js/Router.js"></script>
 </body>
 </html>
